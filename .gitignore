@@ -27,7 +27,6 @@
 **/__pycache__/
 
 # Docker
-**/Dockerfile
 docker-compose.yml
 
 # Build outputs
