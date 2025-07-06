@@ -7,7 +7,7 @@ This repository is a starter template for building full-stack web applications u
 ```
 webapp-starter-python-react/
 ├── frontend/ # React application
-└── backend/ # Python backend application (e.g., FastAPI or Flask)
+└── backend/ # Python backend application
 ```
 
 ---
@@ -25,7 +25,9 @@ cd webapp-starter-python-react
 
 ### 2. Start with Docker
 
-Make sure you have Docker and Docker Compose installed.
+> [!NOTE]
+> Make sure you have Docker and Docker Compose installed.
+> Remember to start Docker or Docker Desktop
 
 Then run:
 
@@ -72,7 +74,3 @@ _frontend/_
 ### 📄 License
 
 MIT — feel free to use and modify for your own projects.
-
-```
-
-```
