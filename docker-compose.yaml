@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   backend:
     build: ./backend
@@ -6,18 +8,18 @@ services:
     env_file:
       - ./backend/.env
     volumes:
-     - ./backend/app:/app/app
-
+      - ./backend/app:/app/app  
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"  # ✅ CRA default
+      - "3000:3000"             # ✅ CRA default
     volumes:
-      - ./frontend:/app
-    stdin_open: true    # ✅ Needed for CRA dev server
+      - ./frontend:/app         # Source code
+      - /app/node_modules       # Keep node_modules inside the container
+    stdin_open: true            # ✅ Needed for CRA dev server
     tty: true
     depends_on:
       - backend
