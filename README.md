@@ -50,7 +50,7 @@ You should see in terminal
 
 ```bash
 {"status":"ok"}
-``
+```
 
 ### 📦 Folder Details
 
@@ -72,4 +72,7 @@ _frontend/_
 ### 📄 License
 
 MIT — feel free to use and modify for your own projects.
+
+```
+
 ```
