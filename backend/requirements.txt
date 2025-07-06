@@ -1,4 +1,7 @@
-fastapi
-uvicorn
+fastapi==0.115.7
+uvicorn==0.30.1         # Or the latest version you're using
+python-multipart>=0.0.5  # Needed for form parsing
 requests
 python-dotenv
+pyyaml
+pydantic
