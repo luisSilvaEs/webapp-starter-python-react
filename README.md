@@ -10,7 +10,6 @@ webapp-starter-python-react/
 └── backend/ # Python backend application (e.g., FastAPI or Flask)
 ```
 
-
 ---
 
 ## 🚀 Getting Started
@@ -25,12 +24,13 @@ cd webapp-starter-python-react
 ```
 
 ### 2. Start with Docker
+
 Make sure you have Docker and Docker Compose installed.
 
 Then run:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 This will:
@@ -39,15 +39,29 @@ This will:
 - Build and run the Python backend.
 - Expose both services on their default ports (customizable in docker-compose.yml).
 
+- React app can be tested through this link [http://localhost:3000/](http://localhost:3000/)
+- Backend app can tested using CURL from terminal:
+
+```bash
+curl -X GET http://localhost:8000/health
+```
+
+You should see in terminal
+
+```bash
+{"status":"ok"}
+``
+
 ### 📦 Folder Details
 
-*frontend/*
+_frontend/_
+
 - Contains the React application.
 - Modify as needed using your preferred libraries (e.g., TailwindCSS, Axios, etc.)
-backend/
+  backend/
 - Contains the Python backend application.
 - Uses FastAPI.
-Ready for API creation and integration with the frontend.
+  Ready for API creation and integration with the frontend.
 
 ### 🛠️ Customization
 
@@ -58,3 +72,4 @@ Ready for API creation and integration with the frontend.
 ### 📄 License
 
 MIT — feel free to use and modify for your own projects.
+```
