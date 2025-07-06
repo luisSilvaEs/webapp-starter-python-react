@@ -23,7 +23,12 @@ git clone https://github.com/your-username/webapp-starter-python-react.git
 cd webapp-starter-python-react
 ```
 
-### 2. Start with Docker
+
+### 2. Add env files
+
+To run the app the first time, create empty _.env_ files in both frontend and backend folders. As you customize ypur app, ypu should add env variables accordingly
+
+### 3. Start with Docker
 
 > [!NOTE]
 > Make sure you have Docker and Docker Compose installed.
@@ -67,7 +72,6 @@ _frontend/_
 
 ### 🛠️ Customization
 
-- Update .env.example to your environment and rename it to .env as needed.
 - Add dependencies to frontend/package.json or backend/requirements.txt.
 - Adjust docker-compose.yml for ports, volumes, and environment variables.
 
